@@ -174,7 +174,7 @@ class ProjectPresenter < Showcase::Presenter
     c.html_options  role: 'label'
   end
 
-  link_to :tasks do
+  link_to :tasks do |c|
     c.url     h.project_tasks_path(self)
     c.label   "Tasks"
   end
